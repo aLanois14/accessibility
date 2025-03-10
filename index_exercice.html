@@ -90,11 +90,6 @@
                 </form>
               </div>
               <div class="account-nav">
-                <ul id="private-menu" class="account-menu">
-                  <li><a href="#">Mes favoris</a></li>
-                  <li><a href="#">Ma liste d'envies</a></li>
-                  <li><a href="#">Mes informations personnelles</a></li>
-                </ul>
                 <button id="account-btn" class="account-btn">
                   <span class="account-btn-text"
                     >Espace privé</span
@@ -115,6 +110,12 @@
                     </g>
                   </svg>
                 </button>
+
+                <ul id="private-menu" class="account-menu">
+                    <li><a href="#">Mes favoris</a></li>
+                    <li><a href="#">Ma liste d'envies</a></li>
+                    <li><a href="#">Mes informations personnelles</a></li>
+                  </ul>
               </div>
             </div>
           </div>
@@ -124,9 +125,9 @@
       <main id="main" tabindex="-1" class="tm-main" role="main">
         <div class="container-fluid">
           <div class="row">
-            <div class="print-btn" id="print" title="Imprimer la page">
+            <button class="print-btn" id="print" title="Imprimer la page">
               <img src="./img/printButton.png" alt="Imprimer la page" />
-            </div>
+            </button>
           </div>
           <div class="row">
             <div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -666,7 +667,7 @@
     ></span>
 
     <!-- Notification consentement cookies -->
-    <div id="cookiesConfirm">
+    <div id="cookiesConfirm" role="alert">
       <p class="cookiesConfirmText"></p>
     </div>
     <script type="text/javascript" src="js/scripts.js"></script>

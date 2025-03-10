@@ -722,10 +722,10 @@ label,
 
 @media (max-width: 1199px) {
   .navbar-menu {
+    display: none;
     position: absolute;
     left: 0;
     right: 0;
-    top: -100%;
     z-index: 100;
     margin-top: 1.5rem;
   }
