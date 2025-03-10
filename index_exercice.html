@@ -16,7 +16,11 @@
 
   <body>
     <div id="wrapper" tabindex="-1">
-      <header class="tm-header">
+        <nav role="navigation" aria-label="Accès rapide">
+            <a href="#main" class="skiplink">Contenu principal</a>
+        </nav>
+        
+      <header class="tm-header" role="banner">
         <div class="container-fluid">
           <div class="tm-header-inner">
             <a href="#" class="tm-site-name" title="Accueil">
@@ -24,7 +28,7 @@
               <span class="tm-site-name-text">Le Thé</span>
             </a>
 
-            <nav class="navbar" id="navbar">
+            <nav class="navbar" id="navbar" role="navigation">
               <button
                 id="toggle-menu"
                 class="navbar-toggler"
@@ -60,7 +64,7 @@
         <div class="underbanner">
           <div class="container-fluid">
             <div class="underbanner-inner">
-              <div class="search-form">
+              <div class="search-form" role="search">
                 <form method="POST">
                   <input
                     type="text"
@@ -107,7 +111,7 @@
         </div>
         <div class="tm-banner-img-container"></div>
       </header>
-      <main id="main" tabindex="-1" class="tm-main">
+      <main id="main" tabindex="-1" class="tm-main" role="main">
         <div class="container-fluid">
           <div class="row">
             <div class="print-btn" id="print" title="Imprimer la page">
@@ -331,7 +335,8 @@
           </div>
         </div>
     </main>
-      <footer class="tm-footer">
+    <!-- Pourquoi le role ici -->
+      <footer class="tm-footer" role="contentinfo"> 
         <div class="container-fluid">
           <div class="row">
             <div
