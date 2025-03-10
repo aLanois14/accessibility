@@ -24,7 +24,7 @@
         <div class="container-fluid">
           <div class="tm-header-inner">
             <a href="#" class="tm-site-name" title="Accueil">
-              <img src="img/logo-le-the.png" alt="Logo du site" width="60" />
+              <img src="img/logo-le-the.png" alt="" width="60" />
               <span class="tm-site-name-text">Le Thé</span>
             </a>
 
@@ -89,7 +89,7 @@
                   <span class="account-btn-text" aria-hidden="true"
                     >Espace privé</span
                   >
-                  <svg viewBox="0 0 24 24" width="24" height="24">
+                  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <g
                       stroke="none"
                       stroke-width="1"
@@ -213,13 +213,10 @@
             <div
               class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 tm-2-rows-sm-down-2"
             >
-              <div class="img-block">
-                <img src="./img/theier.jpg" alt="Photo 1" />
-                <p class="img-block-text">
-                  Photo 1 : Camellia sinensis var. assamica cultivé dans le
-                  jardin botanique d'Auckland.
-                </p>
-              </div>
+            <figure class="img-block" role="figure">
+                <img src="./img/theier.jpg" alt="Photo 1">
+                <figcaption class="img-block-text">Photo 1 : Camellia sinensis var. assamica cultivé dans le jardin botanique d'Auckland.</figcaption>
+            </figure>
             </div>
           </div>
 
@@ -565,21 +562,9 @@
                     Retrouvez-nous sur les réseaux sociaux
                   </h3>
                   <ul class="links-list social-links">
-                    <li>
-                      <a href="#" class="social-link-fb"
-                        ><i title="Facebook"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#" class="social-link-tw"
-                        ><i title="Twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#" class="social-link-inst"
-                        ><i title="Instagram"></i
-                      ></a>
-                    </li>
+                    <li><a href="#" class="social-link-fb"><span class="sr-only">Facebook"></span></a></li>
+                    <li><a href="#" class="social-link-tw"><span class="sr-only">Twitter"></span></a></li>
+                    <li><a href="#" class="social-link-inst"><span class="sr-only">Instagram"></span></a></li>
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -590,7 +575,7 @@
                     14 Rue du camphrier<br />
                     76000 Rouen
                   </p>
-                  <img src="img/salon.jpg" />
+                  <img src="img/salon.jpg" alt=""/>
                 </div>
               </div>
             </div>
