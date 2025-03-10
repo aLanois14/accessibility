@@ -16,6 +16,15 @@
 
   <body>
     <div id="wrapper" tabindex="-1">
+        <div id="cookies" class="cookies">
+            <p>
+              Nous utilisons des cookies pour vous garantir la meilleure expérience
+              sur notre site.
+            </p>
+            <button class="cookies-btn cookies-yes">J'accepte</button>
+            <button class="cookies-btn cookies-no">Je refuse</button>
+          </div>
+
         <nav role="navigation" aria-label="Accès rapide">
             <a href="#main" class="skiplink">Contenu principal</a>
         </nav>
@@ -36,7 +45,7 @@
                 aria-controls="tm-navbar"
               >
                 <span aria-hidden="true">&#9776;</span>
-                <span style="display: none">Menu</span>
+                <span class="sr-only">Menu</span>
               </button>
 
               <div class="navbar-menu" id="tm-navbar">
@@ -86,7 +95,7 @@
                   <li><a href="#">Mes informations personnelles</a></li>
                 </ul>
                 <button id="account-btn" class="account-btn">
-                  <span class="account-btn-text" aria-hidden="true"
+                  <span class="account-btn-text"
                     >Espace privé</span
                   >
                   <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
@@ -467,13 +476,7 @@
                       </div>
                     </div>
                   </div>
-                  <button
-                    type="submit"
-                    class="tm-btn form-group"
-                    id="form-submit"
-                  >
-                    Envoyer
-                  </button>
+                  
                   <div class="form-group" id="newsletter-form-group">
                     <input
                       type="checkbox"
@@ -500,6 +503,13 @@
                       e-mail à des tiers.
                     </p>
                   </div>
+                  <button
+                    type="submit"
+                    class="tm-btn form-group"
+                    id="form-submit"
+                  >
+                    Envoyer
+                  </button>
                 </form>
               </div>
             </div>
@@ -522,9 +532,11 @@
                       <a href="#" class="tm-text-link">Nos thés Oolong</a>
                     </li>
                     <li>
-                      <a href="#" class="tm-text-link new">Nos thés sombres</a>
+                      <a href="#" class="tm-text-link">Nos thés sombres <span class="new-label">Nouveau</span>
+                      </a>
                     </li>
-                    <li><a href="#" class="tm-text-link new">Le matcha</a></li>
+                    <li><a href="#" class="tm-text-link">Le matcha <span class="new-label">Nouveau</span>
+                    </a></li>
                   </ul>
                 </div>
 
@@ -601,14 +613,7 @@
         </div>
       </div>
 
-      <div id="cookies" class="cookies">
-        <p>
-          Nous utilisons des cookies pour vous garantir la meilleure expérience
-          sur notre site.
-        </p>
-        <button class="cookies-btn cookies-yes">J'accepte</button>
-        <button class="cookies-btn cookies-no">Je refuse</button>
-      </div>
+      
     </footer>
 
     <div id="dialog-wrapper" class="dialog-wrapper" style="display: none">
